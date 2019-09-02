@@ -32,15 +32,16 @@ class Car
 	String carName;
 	String maker = "람보르기니";
 	int maxSpeed = 300;
-	int currentSpeed;
+	int currentSpeed = 0;
 	int maxGas = 200;
-	int currentGas;
+	int currentGas = 0;
 
 	Car(String carName) // 차명과 함께 생성. 동시에 가스 100 가짐.
 	{
 		this.carName = carName;
 		currentSpeed = 0;
 		currentGas = 100;
+		power = false;
 		System.out.println("현재속력은 " + currentSpeed + " | 가스잔량은 " + currentGas + "입니다.");
 	}
 
