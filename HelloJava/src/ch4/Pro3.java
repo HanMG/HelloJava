@@ -7,9 +7,9 @@ class SutdaDeck {
 		for(int i = 0; i < cards.length; i++) {			
 			int num = i % 10 + 1;
 			boolean isKwang = (i <= cards.length) && (num == 3 || num == 6 || num == 9);
-//			if((i+1/10) % 3 == 0) {
-//				isKwang = true;
-//			}
+			if((( (i+1)/10 ) / 3) > 0 ) {
+				isKwang = true;
+			}
 			cards[i] = new SutdaCard(i+1, isKwang);
 		}
 	}
